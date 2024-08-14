@@ -8,6 +8,8 @@ channel_name = '#your-channel'  # Slack的頻道
 telegram_bot_token = '你的 Telegram Bot API Token'
 telegram_chat_id = '你的頻道 ID' # Telegram的頻道
 line_notify_token = '你的 Line Notify Token'
+discord_webhook_url = '你的 discord webhook'
+
 
 # 啟用/停用機器人選項
 enable_slack_bot = True
@@ -78,6 +80,15 @@ try:
             response = requests.post(line_notify_url, headers=line_notify_headers, data=line_notify_data)
             if response.status_code != 200:
                 print(f"Error sending message to Line Notify: {response.status_code}, {response.text}")
+
+        # 發送到 Discord
+        if enable_discord_notify:
+            discord_data = {
+                'content': weather_info
+            }
+            response = requests.post(discord_webhook_url, json=discord_data)
+            if response.status_code != 204:
+                print(f"Error sending message to Discord: {response.status_code}, {response.text}")
 
     # 如果沒有相關的特報，不做任何操作
 except KeyError as e:
