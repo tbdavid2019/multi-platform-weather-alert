@@ -21,7 +21,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/multi-platform-weather-alert.git
+    git clone https://github.com/tbdavid2019/multi-platform-weather-alert.git
     cd multi-platform-weather-alert
     ```
 
@@ -101,7 +101,7 @@ If you have any questions, feel free to reach out:
 1. 克隆此儲存庫：
 
     ```bash
-    git clone https://github.com/your-username/multi-platform-weather-alert.git
+    git clone https://github.com/tbdavid2019/multi-platform-weather-alert.git
     cd multi-platform-weather-alert
     ```
 
