@@ -15,6 +15,7 @@ discord_webhook_url = '你的 discord webhook'
 enable_slack_bot = True
 enable_telegram_bot = True
 enable_line_notify = True
+enable_discord_notify = True
 
 # CWA API URL
 cwa_api_url = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore/W-C0033-001'
