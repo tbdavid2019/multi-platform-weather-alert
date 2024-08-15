@@ -5,7 +5,7 @@ This project is a Multi-Platform Weather Alert bot that fetches weather data fro
 ## Features
 
 - Fetches weather alerts from the CWA Open Data API.
-- Sends notifications to Slack, Telegram, and Line Notify channels.
+- Sends notifications to Slack, Telegram, discord, and Line Notify channels.
 - Easily configurable to enable or disable notifications for each platform.
 
 ## Prerequisites
@@ -42,6 +42,7 @@ Before you begin, ensure you have met the following requirements:
     telegram_bot_token = 'your Telegram Bot API Token'
     telegram_chat_id = 'your Telegram Chat ID'
     line_notify_token = 'your Line Notify Token'
+    discord_webhook_url = 'your discord webhook'
     ```
 
 3. Set the `enable_slack_bot`, `enable_telegram_bot`, and `enable_line_notify` variables to `True` or `False` to enable or disable notifications for each platform:
@@ -50,6 +51,7 @@ Before you begin, ensure you have met the following requirements:
     enable_slack_bot = True
     enable_telegram_bot = True
     enable_line_notify = True
+    enable_discord_notify = True
     ```
 
 ## Usage
@@ -122,6 +124,7 @@ If you have any questions, feel free to reach out:
     telegram_bot_token = '您的 Telegram Bot API Token'
     telegram_chat_id = '您的 Telegram 頻道 ID'
     line_notify_token = '您的 Line Notify Token'
+    discord_webhook_url = '你的 discord webhook'
     ```
 
 3. 設置 `enable_slack_bot`、`enable_telegram_bot` 和 `enable_line_notify` 變量為 `True` 或 `False` 以啟用或禁用每個平台的通知：
@@ -130,6 +133,7 @@ If you have any questions, feel free to reach out:
     enable_slack_bot = True
     enable_telegram_bot = True
     enable_line_notify = True
+    enable_discord_notify = True
     ```
 
 ## 使用方法
