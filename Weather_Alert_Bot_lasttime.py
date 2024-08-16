@@ -37,8 +37,15 @@ last_hazard_info = None
 def load_last_hazard_info():
     try:
         with open(last_hazard_file, 'r') as file:
-            return json.load(file)
+            content = file.read().strip()
+            if content:
+                return json.loads(content)
+            else:
+                return None
     except FileNotFoundError:
+        return None
+    except json.JSONDecodeError:
+        print(f"Warning: {last_hazard_file} is not a valid JSON file.")
         return None
 
 def save_last_hazard_info(hazard_info):
