@@ -30,6 +30,9 @@ params = {
 # 存儲上一次的警報信息的文件路徑
 last_hazard_file = 'last_hazard_info.json'
 
+# 初始化 last_hazard_info 變數
+last_hazard_info = None
+
 def load_last_hazard_info():
     try:
         with open(last_hazard_file, 'r') as file:
